@@ -1,0 +1,31 @@
+.cercle-info {
+    background-color: $purple;
+    color: $main__bg--color;
+    width: 24px;
+    height: 24px;
+    border-radius: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.fa-store {
+    color: $purple;
+    margin-right: 20px;
+}
+
+.fa-list,
+.fa-mobile-screen-button {
+    color: #7E7E7E;
+    margin-right: 20px;
+
+    @media screen and (min-width: 768px) {
+        .fa-list,
+        .fa-mobile-screen-button,
+        .fa-store {
+            margin-right: 10px;
+        }
+    }
+}

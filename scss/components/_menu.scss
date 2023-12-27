@@ -1,0 +1,28 @@
+.menu {
+    &__images {
+        height: 275px;
+    }
+
+    &__cards {
+        background-color: $section__bg--color;
+        padding: 15px 10px;
+        margin-top: -70px;
+        position: relative;
+        z-index: 1;
+        border-radius: 40px 40px 0px 0px;
+    }
+
+    &__title {
+        font-size: 28px;
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__heart {
+        margin-left: 50px
+    }
+}

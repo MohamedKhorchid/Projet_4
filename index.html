@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="Images_et_textes_Ohmyfood/images/logo/ohmyfood.png">
+    <title>ohmyfood</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lacquer&family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+</head>
+
+
+<body>
+    <div class="loader-box">
+        <span class="loader"></span>
+    </div>
+
+    <header class="header">
+        <div class="header__content ">
+            <div class="header__logo">
+                <a href="index.html" class="first__appear">
+                    <img src="Images_et_textes_Ohmyfood/images/logo/ohmyfood.png"
+                        alt="Ohmyfood, réservation de repas en ligne" class="header__image">
+                </a>
+            </div>
+
+            <div class="header__text__icon ">
+                <div class="header__icon second__appear">
+                    <i class="fa-solid fa-location-dot "></i>
+                </div>
+
+                <div class="header__text second__appear">
+                    <span class="header__localisation ">Paris, Belleville</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--
+    
+    // Code générique pour toutes les sections "classiques"
+    .section .section__header{}
+    .section .section__header .section__title{}
+
+    // Surcharge, modification spéfique pour le h1 de la première section
+    .section--first .section__header .section__title {}
+    
+
+    SCSS : 
+    - spliter tes fichiers 
+    - imbrication 
+    - variables
+
+    en css 
+    .toto {}
+    .toto .titi {}
+    .toto .tutu {}
+
+    en scss
+    .toto {
+        .titi {
+
+        }
+        .tutu {}
+    }
+
+
+    TODO : 
+    - animations (loader, affichage différé lors du chargement de la page, coeur)
+
+
+    SEMAINE SUIVANTE : 
+    - responsive tablette /ordinateur
+    - corrections animations précédentes
+    - animation des menus
+    -->
+
+
+    <section class="section section--first ">
+
+        <div class="first__section__main third__appear">
+            <div class="first__section__div">
+                <header class="first__section__header">
+                    <h1 class="first__section__title">
+                        Réservez le menu qui vous convient
+                    </h1>
+                </header>
+                <p class="first__section_text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            </div>
+            <div class="button__positionning">
+                <div class="button__style">
+                    <a href="#" class="button__text">
+                        Explorer nos restaurants
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section class="section section--second">
+
+        <header class="second__section__header forth__appear">
+            <h2 class="function__title">Fonctionnement</h2>
+        </header>
+
+        <div class="function">
+            <div class="function__step fifth__appear">
+                <div class="cercle-info">
+                    <i class="fa-solid fa-1 fa-xs"></i>
+                </div>
+
+                <button class="function__button">
+                    <span class="button__content">
+                        <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
+                        <span class="function__button__text">Choisissez un restaurant</span>
+                    </span>
+                </button>
+            </div>
+
+            <div class="function__step sixth__appear">
+                <div class="cercle-info">
+                    <i class="fa-solid fa-2 fa-xs"></i>
+                </div>
+
+                <button class="function__button">
+                    <span class="button__content">
+                        <i class="fa-solid fa-list fa-lg"></i>
+                        <span class="function__button__text">Choisissez votre menu</span>
+                    </span>
+                </button>
+            </div>
+
+            <div class="function__step seven__appear">
+                <div class="cercle-info">
+                    <i class="fa-solid fa-3 fa-xs"></i>
+                </div>
+
+                <button class="function__button">
+                    <span class="button__content">
+                        <i class="fa-solid fa-store fa-lg"></i>
+                        <span class="function__button__text">Dégustez au restaurant</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section--third">
+        <h2 class="card__list__title">Restaurants</h2>
+        <div class="card__informations">
+
+            <article class="card">
+
+                <div class="card__new">
+                    <span class="card__new__text">Nouveau</span>
+                </div>
+
+                <div class="card__images__position">
+                    <a href="La_Palette_Du_Gout.html">
+                        <img src="Images_et_textes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            alt="Restaurant La Palette du Goût Ménilmontant" class="card__image">
+                    </a>
+                </div>
+
+                <div class="card__text__heart">
+                    <a href="La_Palette_Du_Gout.html">
+                        <div class="card__text">
+                            <h3 class="card__title">
+                                La Palette du Goût
+                            </h3>
+                            <p class="card__subtitle">
+                                Ménilmontant
+                            </p>
+                        </div>
+                    </a>
+
+                    <svg id='heart' height="0" width="0">
+                        <defs>
+                            <clipPath id="svgPath">
+                                <path
+                                    d="M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <input type="checkbox" id="addfavorite">
+                    <label for="addfavorite">
+                        <div class="heart-container">
+                            <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                                <path
+                                    d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z" />
+                            </svg>
+                            <span class="heart-clip"></span>
+                        </div>
+                    </label>
+                </div>
+            </article>
+
+
+            <article class="card">
+
+                <div class="card__new">
+                    <span class="card__new__text">Nouveau</span>
+                </div>
+
+                <div class="card__images__position">
+                    <a href="La_Note_Enchantee.html">
+                        <img src="Images_et_textes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                            alt="Restaurant La Note Enchantée Charonne" class="card__image">
+                    </a>
+                </div>
+
+                <div class="card__text__heart">
+                    <a href="La_Note_Enchantee.html">
+                        <div class="card__text">
+                            <h3 class="card__title">
+                                La Note Enchantée
+                            </h3>
+                            <p class="card__subtitle">
+                                Charonne
+                            </p>
+                        </div>
+                    </a>
+
+                    <svg id='heart' height="0" width="0">
+                        <defs>
+                            <clipPath id="svgPath">
+                                <path
+                                    d="M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <input type="checkbox" id="addfavorite2">
+                    <label for="addfavorite2">
+                        <div class="heart-container">
+                            <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                                <path
+                                    d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z" />
+                            </svg>
+                            <span class="heart-clip"></span>
+                        </div>
+                    </label>
+                </div>
+            </article>
+
+
+            <article class="card">
+
+                <div class="card__images__position">
+                    <a href="A_La_Francaise.html">
+                        <img src="Images_et_textes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="Restaurant A la Française Cité Rouge" class="card__image">
+                    </a>
+                </div>
+
+                <div class="card__text__heart">
+                    <a href="A_La_Francaise.html">
+                        <div class="card__text">
+                            <h3 class="card__title">
+                                Á la Française
+                            </h3>
+                            <p class="card__subtitle">
+                                Cité Rouge
+                            </p>
+                        </div>
+                    </a>
+
+                    <svg id='heart' height="0" width="0">
+                        <defs>
+                            <clipPath id="svgPath">
+                                <path
+                                    d="M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <input type="checkbox" id="addfavorite3">
+                    <label for="addfavorite3">
+                        <div class="heart-container">
+                            <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                                <path
+                                    d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z" />
+                            </svg>
+                            <span class="heart-clip"></span>
+                        </div>
+                    </label>
+                </div>
+            </article>
+
+
+            <article class="card">
+
+                <div class="card__images__position">
+                    <a href="Le_Delice_Des_Sens.html">
+                        <img src="Images_et_textes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="Restaurant Le Délice des Sens Folie-Méricourt" class="card__image">
+                    </a>
+                </div>
+
+                <div class="card__text__heart">
+                    <a href="Le_Delice_Des_Sens.html">
+                        <div class="card__text">
+                            <h3 class="card__title">
+                                Le Délice des Sens
+                            </h3>
+                            <p class="card__subtitle">
+                                Folie-Méricourt
+                            </p>
+                        </div>
+                    </a>
+
+                    <svg id='heart' height="0" width="0">
+                        <defs>
+                            <clipPath id="svgPath">
+                                <path
+                                    d="M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <input type="checkbox" id="addfavorite4">
+                    <label for="addfavorite4">
+                        <div class="heart-container">
+                            <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                                <path
+                                    d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z" />
+                            </svg>
+                            <span class="heart-clip"></span>
+                        </div>
+                    </label>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="index.html" class="footer__logo__text">
+                <span>ohmyfood</span>
+            </a>
+        </div>
+
+        <div class="partnership__information">
+
+            <div class="partnership">
+                <a href="#" class="partnership__text"><i class="fa-solid fa-utensils fa-2xs"></i>Proposer un
+                    restaurant</a>
+                <a href="#" class="partnership__text"><i class="fa-solid fa-handshake-angle fa-2xs"></i>Devenir
+                    partenaire</a>
+            </div>
+            <div class="information">
+                <a href="#" class="partnership__text">Mentions légales</a>
+                <a href="#" class="partnership__text">Contact</a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

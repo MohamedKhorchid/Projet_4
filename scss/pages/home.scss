@@ -1,0 +1,76 @@
+@import '../utils/variables';
+@import '../utils/appear-from-right';
+@import '../utils/heart';
+@import '../utils/icons';
+@import '../utils/loader';
+
+
+@import '../base/base';
+
+
+@import '../components/button';
+@import '../components/function';
+@import '../components/index-card';
+
+
+@import '../layouts/header';
+@import '../layouts/footer';
+
+
+
+.section--first {
+    display: flex;
+    justify-content: center;
+    background-color: $section__bg--color;
+    padding: 30px 0px 60px 0px;
+}
+
+.first__section {
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__title {
+        text-align: center;
+        padding: 0px 45px;
+        font-size: 24px;
+        font-family: 'roboto';
+    }
+
+    &__text {
+        text-align: center;
+        padding: 0px 25px;
+        font-size: 18px;
+        font-family: 'roboto';
+    }
+}
+
+.section--second {
+    padding: 0px 0px 0px 20px;
+
+    @media screen and (min-width: 1024px) {
+        .section--second {
+            padding: 0px 180px;
+        }
+    }
+}
+
+.section__second {
+    &__header {
+        margin: 50px 0px 40px 0px;
+    }
+}
+
+.section--third {
+    margin-top: 70px;
+    background-color: $section__bg--color;
+    padding: 50px 0px;
+
+    @media screen and (min-width: 1024px) {
+        .section--third {
+            padding: 10px 150px;
+        }
+    }
+}

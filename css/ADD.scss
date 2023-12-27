@@ -1,0 +1,142 @@
+.valid {
+    width: 59px;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #99E2D0;
+    transform: translateX(100px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+#add:checked+label .valid {
+
+    transform: translateX(0px);
+
+}
+
+#add2:checked+label .valid {
+
+    transform: translateX(0px);
+    
+}
+
+#add3:checked+label .valid {
+
+    transform: translateX(0px);
+    
+}
+
+#add4:checked+label .valid {
+
+    transform: translateX(0px);
+   
+}
+
+#add5:checked+label .valid {
+
+    transform: translateX(0px);
+   
+}
+
+#add6:checked+label .valid {
+
+    transform: translateX(0px);
+   
+}
+
+#add7:checked+label .valid {
+
+    transform: translateX(0px);
+   
+}
+
+#add8:checked+label .valid {
+
+    transform: translateX(0px);
+   
+}
+
+#add9:checked+label .valid {
+
+    transform: translateX(0px);
+   
+}
+
+#add10:checked+label .valid {
+
+    transform: translateX(0px);
+   
+}
+.card__prices {
+    font-family: 'Roboto', sans-serif;
+    transform: translateX(0px);
+    transition: transform .5s;
+}
+
+#add:checked+label .card__prices {
+
+    transform: translateX(-50px);
+   
+}
+
+#add2:checked+label .card__prices {
+
+    transform: translateX(-50px);
+  
+}
+
+#add3:checked+label .card__prices {
+
+    transform: translateX(-50px);
+    
+}
+
+#add4:checked+label .card__prices {
+
+    transform: translateX(-50px);
+    
+}
+
+#add5:checked+label .card__prices {
+
+    transform: translateX(-50px);
+    
+}
+
+#add6:checked+label .card__prices {
+
+    transform: translateX(-50px);
+    
+}
+
+#add7:checked+label .card__prices {
+
+    transform: translateX(-50px);
+    
+}
+
+#add8:checked+label .card__prices {
+
+    transform: translateX(-50px);
+    
+}
+
+#add9:checked+label .card__prices {
+
+    transform: translateX(-50px);
+    
+}
+
+#add10:checked+label .card__prices {
+
+    transform: translateX(-50px);
+    
+}

@@ -1,0 +1,23 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', serif;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    margin: 0px;
+    animation: fadein 5s 1.5s;
+    overflow-x: hidden;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}

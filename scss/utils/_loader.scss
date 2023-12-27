@@ -1,0 +1,73 @@
+
+.loader {
+    width: 48px;
+    height: 40px;
+    margin-top: 30px;
+    display: inline-block;
+    position: relative;
+    background: $main__bg--color;
+    border-radius: 15% 15% 35% 35%;
+
+    &::after {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        left: 45px;
+        top: 8px;
+        border: 4px solid $main__bg--color;
+        width: 16px;
+        height: 20px;
+        border-radius: 0 4px 4px 0;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        color: $main__bg--color;
+        top: -15px;
+        left: 11px;
+        box-sizing: border-box;
+        animation: animloader 1s ease infinite;
+    }
+}
+
+@keyframes animloader {
+    0% {
+        box-shadow: 2px 0px rgba(255, 255, 255, 0), 12px 0px rgba(255, 255, 255, 0.3), 20px 0px rgba(255, 255, 255, 0);
+    }
+
+    50% {
+        box-shadow: 2px -5px rgba(255, 255, 255, 0.5), 12px -3px rgba(255, 255, 255, 0.5), 20px -2px rgba(255, 255, 255, 0.6);
+    }
+
+    100% {
+        box-shadow: 2px -8px rgba(255, 255, 255, 0), 12px -5px rgba(255, 255, 255, 0), 20px -5px rgba(255, 255, 255, 0);
+    }
+}
+
+.loader-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: linear-gradient($pink, $purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fade 1.5s 1.5s forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

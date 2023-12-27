@@ -1,0 +1,63 @@
+
+.footer {
+    background-color: $main__text--color;
+    padding: 25px;
+
+    &__logo {
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: $main__bg--color;
+        font-family: 'Shrikhand';
+    }
+}
+
+.partnership {
+    &__information {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__text {
+        color: $main__bg--color;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'roboto';
+    }
+
+
+@media screen and (min-width: 858px) {
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 100px;
+
+        &__logo {
+            margin-bottom: 0px;
+            margin-left: 20px;
+        }
+    }
+
+    .partnership {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+
+        &__information {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 50px;
+        }
+    }
+
+
+    .information {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+}
+}

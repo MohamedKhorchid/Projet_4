@@ -1,0 +1,68 @@
+@keyframes fadeinright {
+    0% {
+        transform: translateX(1500px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.first__appear {
+    animation: fadeinright 4s 1s both;
+}
+
+.second__appear {
+    animation: fadeinright 4s 2s both;
+}
+
+.third__appear {
+    animation: fadeinright 4s 3s both;
+}
+
+.forth__appear {
+    animation: fadeinright 4s 4s both;
+}
+
+.fifth__appear {
+    animation: fadeinright 4s 5s both;
+}
+
+.sixth__appear {
+    animation: fadeinright 4s 6s both;
+}
+
+.seven__appear {
+    animation: fadeinright 4s 7s both;
+}
+.eight__appear {
+    animation: fadeinright 4s 8s both;
+}
+
+.nine__appear {
+    animation: fadeinright 4s 9s both;
+}
+
+.ten__appear {
+    animation: fadeinright 4s 10s both;
+}
+
+.eleven__appear {
+    animation: fadeinright 4s 11s both;
+}
+
+.twelve__appear {
+    animation: fadeinright 4s 12s both;
+}
+
+.thirteen__appear {
+    animation: fadeinright 4s 13s both;
+}
+
+.fourteen__appear {
+    animation: fadeinright 4s 14s both;
+}
+
+.fifteen__appear {
+    animation: fadeinright 4s 15s both;
+}
