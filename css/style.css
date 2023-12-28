@@ -1,5 +1,5 @@
 
-.html, body {
+html {
     overflow-x: hidden;
 }
 
@@ -37,8 +37,10 @@
     top: -15px;
     left: 11px;
     box-sizing: border-box;
-    animation: animloader 1s ease infinite;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    animation: animloader 1s ease infinite; 
 }
+
 
 @keyframes animloader {
     0% {
@@ -209,6 +211,7 @@ body {
     transform: scale(1);
     opacity: 1;
     transition: opacity .5s, transform .5s;
+    
 }
 
 .button__style:hover {
@@ -430,35 +433,6 @@ body {
     clip-path: url(#svgPath);
 }
 
-/*.heart-clip:focus::before {
-    transform: scale(1);
-    opacity: 1;
-}*/
-
-input[type="checkbox"] {
-    display: none;
-}
-
-#addfavorite:checked + label .heart-clip::before {
-    transform: scale(1);
-    opacity: 1;
-}
-
-#addfavorite2:checked + label .heart-clip::before {
-    transform: scale(1);
-    opacity: 1;
-}
-
-#addfavorite3:checked + label .heart-clip::before {
-    transform: scale(1);
-    opacity: 1;
-}
-
-#addfavorite4:checked + label .heart-clip::before {
-    transform: scale(1);
-    opacity: 1;
-}
-
 .heart-clip::before {
     content: "";
     display: block;
@@ -472,6 +446,15 @@ input[type="checkbox"] {
     position: absolute;
     top: -2px;
     left: -1px;
+}
+
+.coeurplein {
+    display: none;
+}
+
+.coeurplein:checked + label .heart-clip::before {
+    transform: scale(1);
+    opacity: 1;
 }
 
 .heart-stroke {

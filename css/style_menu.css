@@ -318,66 +318,9 @@ input[type="checkbox"] {
     display: none;
 }
 
-#add:checked+label .valid {
-
+.addtocard:checked+label .valid {
     transform: translateX(0px);
-
 }
-
-#add2:checked+label .valid {
-
-    transform: translateX(0px);
-    
-}
-
-#add3:checked+label .valid {
-
-    transform: translateX(0px);
-    
-}
-
-#add4:checked+label .valid {
-
-    transform: translateX(0px);
-   
-}
-
-#add5:checked+label .valid {
-
-    transform: translateX(0px);
-   
-}
-
-#add6:checked+label .valid {
-
-    transform: translateX(0px);
-   
-}
-
-#add7:checked+label .valid {
-
-    transform: translateX(0px);
-   
-}
-
-#add8:checked+label .valid {
-
-    transform: translateX(0px);
-   
-}
-
-#add9:checked+label .valid {
-
-    transform: translateX(0px);
-   
-}
-
-#add10:checked+label .valid {
-
-    transform: translateX(0px);
-   
-}
-
 
 .card__prices__position {
     width: 50px;
@@ -420,64 +363,8 @@ input[type="checkbox"] {
 }
 */
 
-#add:checked+label .card__prices {
-
-    transform: translateX(-50px);
-   
-}
-
-#add2:checked+label .card__prices {
-
-    transform: translateX(-50px);
-  
-}
-
-#add3:checked+label .card__prices {
-
-    transform: translateX(-50px);
-    
-}
-
-#add4:checked+label .card__prices {
-
-    transform: translateX(-50px);
-    
-}
-
-#add5:checked+label .card__prices {
-
-    transform: translateX(-50px);
-    
-}
-
-#add6:checked+label .card__prices {
-
-    transform: translateX(-50px);
-    
-}
-
-#add7:checked+label .card__prices {
-
-    transform: translateX(-50px);
-    
-}
-
-#add8:checked+label .card__prices {
-
-    transform: translateX(-50px);
-    
-}
-
-#add9:checked+label .card__prices {
-
-    transform: translateX(-50px);
-    
-}
-
-#add10:checked+label .card__prices {
-
-    transform: translateX(-50px);
-    
+.addtocard:checked+label .card__prices {
+    transform: translateX(-50px); 
 }
 
 .button__positionning {
@@ -589,5 +476,4 @@ input[type="checkbox"] {
         margin-bottom: 0px;
         margin-left: 20px;
     }
-
 }
