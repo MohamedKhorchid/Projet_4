@@ -7,7 +7,9 @@ $main__bg--color: white;
 $box__shadow--color:#00000026;
 $section__bg--color:#f6f6f6;
 
-
+html {
+    overflow-x: hidden;
+}
 
 .loader {
     width: 48px;
@@ -238,7 +240,7 @@ body {
     padding: 0px 0px 0px 20px;
 }
 
-.section__second {
+.second__section {
     &__header {
         margin: 50px 0px 40px 0px;
     }
@@ -465,6 +467,16 @@ body {
         fill: $main__text--color;
     }
 }
+
+.coeurplein {
+    display: none;
+
+    &__:checked + label .heart-clip::before {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 
 .footer {
     background-color: $main__text--color;

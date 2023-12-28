@@ -314,7 +314,7 @@ body {
     transition: all .4s;
 }*/
 
-input[type="checkbox"] {
+.addtocard {
     display: none;
 }
 

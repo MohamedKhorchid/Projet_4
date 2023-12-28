@@ -6,6 +6,79 @@ $main__bg--color: white;
 $box__shadow--color:#00000026;
 $section__bg--color:#f6f6f6;
 
+.loader {
+    width: 48px;
+    height: 40px;
+    margin-top: 30px;
+    display: inline-block;
+    position: relative;
+    background: $main__bg--color;
+    border-radius: 15% 15% 35% 35%;
+
+    &::after {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        left: 45px;
+        top: 8px;
+        border: 4px solid $main__bg--color;
+        width: 16px;
+        height: 20px;
+        border-radius: 0 4px 4px 0;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        color: $main__bg--color;
+        top: -15px;
+        left: 11px;
+        box-sizing: border-box;
+        animation: animloader 1s ease infinite;
+    }
+}
+
+@keyframes animloader {
+    0% {
+        box-shadow: 2px 0px rgba(255, 255, 255, 0), 12px 0px rgba(255, 255, 255, 0.3), 20px 0px rgba(255, 255, 255, 0);
+    }
+
+    50% {
+        box-shadow: 2px -5px rgba(255, 255, 255, 0.5), 12px -3px rgba(255, 255, 255, 0.5), 20px -2px rgba(255, 255, 255, 0.6);
+    }
+
+    100% {
+        box-shadow: 2px -8px rgba(255, 255, 255, 0), 12px -5px rgba(255, 255, 255, 0), 20px -5px rgba(255, 255, 255, 0);
+    }
+}
+
+.loader-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: linear-gradient($pink, $purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fade 1.5s 1.5s forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
 img {
     width: 100%;
 }
@@ -14,14 +87,99 @@ a {
     text-decoration: none;
 }
 
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
     margin: 0px;
+    animation: fadein 5s 1.5s;
+    overflow-x: hidden;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
     font-family: 'Shrikhand', serif;
     box-sizing: border-box;
+}
+
+
+@keyframes fadeinright {
+    0% {
+        transform: translateX(1500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.first__appear {
+    animation: fadeinright 4s 1s both;
+}
+
+.second__appear {
+    animation: fadeinright 4s 2s both;
+}
+
+.third__appear {
+    animation: fadeinright 4s 3s both;
+}
+
+.forth__appear {
+    animation: fadeinright 4s 4s both;
+}
+
+.fifth__appear {
+    animation: fadeinright 4s 5s both;
+}
+
+.sixth__appear {
+    animation: fadeinright 4s 6s both;
+}
+
+.seven__appear {
+    animation: fadeinright 4s 7s both;
+}
+
+.eight__appear {
+    animation: fadeinright 4s 8s both;
+}
+
+.nine__appear {
+    animation: fadeinright 4s 9s both;
+}
+
+.ten__appear {
+    animation: fadeinright 4s 10s both;
+}
+
+.eleven__appear {
+    animation: fadeinright 4s 11s both;
+}
+
+.twelve__appear {
+    animation: fadeinright 4s 12s both;
+}
+
+.thirteen__appear {
+    animation: fadeinright 4s 13s both;
+}
+
+.fourteen__appear {
+    animation: fadeinright 4s 14s both;
+}
+
+.fifteen__appear {
+    animation: fadeinright 4s 15s both;
 }
 
 .header {
@@ -187,6 +345,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.addtocard {
+    display: none;
+
+    &:checked+label .valid {
+        transform: translateX(0px);
+    }
+
+    &:checked+label .card__prices {
+        transform: translateX(-50px); 
+    }
 }
 
 .button {
