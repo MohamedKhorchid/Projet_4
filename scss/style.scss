@@ -42,6 +42,7 @@ html {
         left: 11px;
         box-sizing: border-box;
         animation: animloader 1s ease infinite;
+        
     }
 }
 
@@ -107,6 +108,12 @@ a {
     }
 }
 
+body {
+    margin: 0px;
+    animation: fadein 5s 1.5s;
+    overflow-x: hidden;
+}
+
 @keyframes fadein {
     0% {
         opacity: 0;
@@ -117,11 +124,6 @@ a {
     }
 }
 
-body {
-    margin: 0px;
-    animation: fadein 5s 1.5s;
-    overflow-x: hidden;
-}
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -143,7 +145,7 @@ body {
         flex-direction: column;
     }
 
-    &__loge {
+    &__logo {
         display: flex;
         justify-content: center;
         align-items: center;
