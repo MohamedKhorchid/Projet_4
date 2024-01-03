@@ -183,6 +183,8 @@ body {
 }
 
 .header {
+    overflow: hidden;
+
     &__arrow__logo {
         width: 100%;
         display: flex;
@@ -231,6 +233,7 @@ body {
         position: relative;
         z-index: 1;
         border-radius: 40px 40px 0px 0px;
+        overflow-x: hidden;
     }
 
     &__title {
@@ -242,11 +245,9 @@ body {
         flex-direction: row;
         align-items: center;
     }
-
-    &__heart {
-        margin-left: 50px
-    }
 }
+
+
 
 
 
@@ -259,7 +260,7 @@ body {
         color: $main__text--color;
         font-size: 17px;
         position: relative;
-        margin-bottom: 12px;
+        margin-bottom: 20px;
 
         &::after {
 
@@ -287,29 +288,7 @@ body {
         box-shadow: 0px 0px 15px 0px rgb(211, 211, 211);
         position: relative;
         overflow: hidden;
-
-        &:hover {
-
-            .valid {
-                transform: translateX(0px);
-                transition: all .4s;
-            }
-
-            .card__prices {
-                transform: translateX(-50px);
-                transition: transform .5s;
-            }
-        }
-    }
-
-    &__prices__position {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 25px;
-        font-weight: 700;
+        cursor: pointer;
     }
 
     &__names__subtitle {
@@ -326,6 +305,17 @@ body {
     &__prices {
         font-family: 'Roboto', sans-serif;
         transform: translateX(0px);
+        transition: transform .5s;
+
+        &__position {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            font-weight: 700;
+        }
     }
 }
 
@@ -345,6 +335,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .4s;
 }
 
 .addtocard {
@@ -357,6 +348,20 @@ body {
     &:checked+label .card__prices {
         transform: translateX(-50px); 
     }
+
+    &:checked+label .card__names__title {
+        width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &:checked+label .card__names__subtitle {
+        width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
 }
 
 .button {
@@ -365,7 +370,6 @@ body {
         justify-content: center;
         align-items: center;
         margin-bottom: 40px;
-        padding: 0px 80px;
     }
 
     &__style {
@@ -375,16 +379,15 @@ body {
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        padding: 15px 25px;
+        padding: 16px 48px;
         box-shadow: 0px 4px 15px 0px $box__shadow--color;
         opacity: 1;
         transform: scale(1);
-
+        transition: opacity .5s, transform .5s;
 
         &:hover {
-            transform: scale(1.01);
-            opacity: 0.8;
-            transition: transform 1s;
+            transform: scale(1.015);
+            opacity: 0.85;
         }
     }
 
@@ -398,7 +401,7 @@ body {
     background-color: $main__text--color;
     padding: 25px;
 
-    &__logo {
+    &__logo__text {
         margin-bottom: 10px;
         font-size: 20px;
         color: $main__bg--color;
@@ -423,22 +426,24 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .menu__cards {
-        margin: 0px 120px;
-        padding: 0px 120px 10px 120px;
-    }
-
     .restaurant__image {
         height: 300px;
     }
 
-    .menu__information {
+    .menu {
+        &__information {
         display: flex;
         justify-content: center;
-    }
+        }
 
-    .menu__heart {
+        &__heart {
         margin-left: 25px;
+        }
+
+        &__cards {
+        margin: 0px 120px;
+        padding: 0px 120px 10px 120px;
+        }
     }
 }
 
@@ -458,9 +463,6 @@ body {
         display: flex;
         flex-direction: row;
         gap: 10px;
-
-
-
 
         &__information {
             flex-direction: row;

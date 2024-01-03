@@ -1,11 +1,11 @@
 $green__background: #008766;
 $green__background2: #99E2D0;
 $purple: #9356DC;
-$pink:#FF79DA;
-$main__text--color:#353535;
+$pink: #FF79DA;
+$main__text--color: #353535;
 $main__bg--color: white;
-$box__shadow--color:#00000026;
-$section__bg--color:#f6f6f6;
+$box__shadow--color: #00000026;
+$section__bg--color: #f6f6f6;
 
 html {
     overflow-x: hidden;
@@ -42,7 +42,7 @@ html {
         left: 11px;
         box-sizing: border-box;
         animation: animloader 1s ease infinite;
-        
+
     }
 }
 
@@ -125,6 +125,7 @@ body {
 }
 
 
+
 * {
     font-family: 'Roboto', sans-serif;
     font-family: 'Shrikhand', serif;
@@ -180,6 +181,7 @@ body {
     justify-content: center;
     background-color: $section__bg--color;
     padding: 30px 0px 60px 0px;
+    overflow: hidden;
 }
 
 .first__section {
@@ -209,26 +211,25 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0px 80px;
     }
 
     &__style {
-        background: linear-gradient($pink,$purple);
+        background: linear-gradient($pink, $purple);
         border-radius: 29px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        padding: 15px 15px;
+        padding: 13px 16px;
         box-shadow: 0px 4px 15px 0px $box__shadow--color;
         cursor: pointer;
         transform: scale(1);
         opacity: 1;
+        transition:  transform .5s, opacity .5s;
 
         &:hover {
             transform: scale(1.015);
             opacity: 0.85;
-            transition: opacity .5s, transform .5s;
         }
     }
 
@@ -240,6 +241,7 @@ body {
 
 .section--second {
     padding: 0px 0px 0px 20px;
+    overflow-x: hidden;
 }
 
 .second__section {
@@ -363,7 +365,7 @@ body {
     cursor: pointer;
     position: relative;
 
-    &:hover {
+    &:hover .card__title {
         text-decoration: underline;
     }
 
@@ -372,7 +374,6 @@ body {
         margin-top: 10px;
         margin-left: 15px;
         font-family: 'roboto';
-        text-decoration: underline;
     }
 
     &__subtitle {
@@ -399,6 +400,7 @@ body {
         width: 80px;
         height: 29px;
         background-color: $green__background2;
+        border-radius: 2px;
         position: absolute;
         top: 12px;
         right: 13px;
@@ -407,7 +409,7 @@ body {
         align-items: center;
 
         &__text {
-            color:$green__background;
+            color: $green__background;
             font-family: 'Roboto', sans-serif;
         }
     }
@@ -442,11 +444,6 @@ body {
         overflow: hidden;
         clip-path: url(#svgPath);
 
-        &:focus::before {
-            transform: scale(1);
-            opacity: 1;
-        }
-
         &::before {
             content: "";
             display: block;
@@ -457,6 +454,9 @@ body {
             transform: scale(0);
             transition: transform 0.2s linear, opacity 0.2s linear;
             transform-origin: center 60%;
+            position: absolute;
+            top: -2px;
+            left: -1px;
         }
     }
 
@@ -473,7 +473,7 @@ body {
 .coeurplein {
     display: none;
 
-    &__:checked + label .heart-clip::before {
+    &:checked+label .heart-clip::before {
         transform: scale(1);
         opacity: 1;
     }
@@ -484,7 +484,7 @@ body {
     background-color: $main__text--color;
     padding: 25px;
 
-    &__logo {
+    &__logo__text {
         margin-bottom: 10px;
         font-size: 20px;
         color: $main__bg--color;
@@ -510,7 +510,7 @@ body {
 
 @media screen and (min-width: 768px) {
     body {
-        background:$main__bg--color;
+        background: $main__bg--color;
     }
 
     .function {

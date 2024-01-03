@@ -211,7 +211,6 @@ body {
     transform: scale(1);
     opacity: 1;
     transition: opacity .5s, transform .5s;
-    
 }
 
 .button__style:hover {

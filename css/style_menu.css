@@ -237,11 +237,6 @@ body {
     align-items: center;
 }
 
-/*.menu__heart {
-    margin-left: 50px;
-    position: relative;
-}*/
-
 .heart-container {
     position: relative;
     width: 40px;
